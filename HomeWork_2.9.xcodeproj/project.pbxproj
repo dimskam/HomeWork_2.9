@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091E69108430CDFE9680A023 /* Pods_HomeWork_2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B13AFD995F210B0A885A1C73 /* Pods_HomeWork_2_9.framework */; };
 		C855F5C92513749E00996F8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F5C82513749E00996F8A /* AppDelegate.swift */; };
 		C855F5CB2513749E00996F8A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F5CA2513749E00996F8A /* SceneDelegate.swift */; };
 		C855F5CD2513749E00996F8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F5CC2513749E00996F8A /* ViewController.swift */; };
 		C855F5D02513749E00996F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C855F5CE2513749E00996F8A /* Main.storyboard */; };
 		C855F5D22513749F00996F8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C855F5D12513749F00996F8A /* Assets.xcassets */; };
 		C855F5D52513749F00996F8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C855F5D32513749F00996F8A /* LaunchScreen.storyboard */; };
+		C855F5E02513C62A00996F8A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855F5DF2513C62A00996F8A /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3478AF48CD0CC3F5F3C739E3 /* Pods-HomeWork_2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork_2.9.release.xcconfig"; path = "Target Support Files/Pods-HomeWork_2.9/Pods-HomeWork_2.9.release.xcconfig"; sourceTree = "<group>"; };
+		62B368EFFFD4A6AD554479C8 /* Pods-HomeWork_2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeWork_2.9.debug.xcconfig"; path = "Target Support Files/Pods-HomeWork_2.9/Pods-HomeWork_2.9.debug.xcconfig"; sourceTree = "<group>"; };
+		B13AFD995F210B0A885A1C73 /* Pods_HomeWork_2_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeWork_2_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C855F5C52513749E00996F8A /* HomeWork_2.9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWork_2.9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C855F5C82513749E00996F8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C855F5CA2513749E00996F8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		C855F5D12513749F00996F8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C855F5D42513749F00996F8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C855F5D62513749F00996F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C855F5DF2513C62A00996F8A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091E69108430CDFE9680A023 /* Pods_HomeWork_2_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				C855F5C72513749E00996F8A /* HomeWork_2.9 */,
 				C855F5C62513749E00996F8A /* Products */,
+				E092189A6A803C33115AAD3B /* Pods */,
+				E6492F6C5F0822FE4D4B961D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,57 @@
 		C855F5C72513749E00996F8A /* HomeWork_2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				C855F5C82513749E00996F8A /* AppDelegate.swift */,
-				C855F5CA2513749E00996F8A /* SceneDelegate.swift */,
-				C855F5CC2513749E00996F8A /* ViewController.swift */,
-				C855F5CE2513749E00996F8A /* Main.storyboard */,
+				C855F5DC251374CC00996F8A /* Supporting File */,
+				C855F5DE2513750600996F8A /* View Controllers */,
+				C855F5DD251374E800996F8A /* Storyboards */,
 				C855F5D12513749F00996F8A /* Assets.xcassets */,
-				C855F5D32513749F00996F8A /* LaunchScreen.storyboard */,
-				C855F5D62513749F00996F8A /* Info.plist */,
 			);
 			path = HomeWork_2.9;
+			sourceTree = "<group>";
+		};
+		C855F5DC251374CC00996F8A /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				C855F5C82513749E00996F8A /* AppDelegate.swift */,
+				C855F5CA2513749E00996F8A /* SceneDelegate.swift */,
+				C855F5D62513749F00996F8A /* Info.plist */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		C855F5DD251374E800996F8A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C855F5CE2513749E00996F8A /* Main.storyboard */,
+				C855F5D32513749F00996F8A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C855F5DE2513750600996F8A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C855F5CC2513749E00996F8A /* ViewController.swift */,
+				C855F5DF2513C62A00996F8A /* Model.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E092189A6A803C33115AAD3B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62B368EFFFD4A6AD554479C8 /* Pods-HomeWork_2.9.debug.xcconfig */,
+				3478AF48CD0CC3F5F3C739E3 /* Pods-HomeWork_2.9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E6492F6C5F0822FE4D4B961D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B13AFD995F210B0A885A1C73 /* Pods_HomeWork_2_9.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C855F5D92513749F00996F8A /* Build configuration list for PBXNativeTarget "HomeWork_2.9" */;
 			buildPhases = (
+				E4B1C3355B34D9EBC1CC187C /* [CP] Check Pods Manifest.lock */,
 				C855F5C12513749E00996F8A /* Sources */,
 				C855F5C22513749E00996F8A /* Frameworks */,
 				C855F5C32513749E00996F8A /* Resources */,
+				E6F30F5BF68FAD39CC07D8F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +186,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E4B1C3355B34D9EBC1CC187C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeWork_2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6F30F5BF68FAD39CC07D8F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork_2.9/Pods-HomeWork_2.9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeWork_2.9/Pods-HomeWork_2.9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeWork_2.9/Pods-HomeWork_2.9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C855F5C12513749E00996F8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +236,7 @@
 				C855F5CD2513749E00996F8A /* ViewController.swift in Sources */,
 				C855F5C92513749E00996F8A /* AppDelegate.swift in Sources */,
 				C855F5CB2513749E00996F8A /* SceneDelegate.swift in Sources */,
+				C855F5E02513C62A00996F8A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +378,12 @@
 		};
 		C855F5DA2513749F00996F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62B368EFFFD4A6AD554479C8 /* Pods-HomeWork_2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VNY47P4USV;
-				INFOPLIST_FILE = HomeWork_2.9/Info.plist;
+				INFOPLIST_FILE = "HomeWork_2.9/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +397,12 @@
 		};
 		C855F5DB2513749F00996F8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3478AF48CD0CC3F5F3C739E3 /* Pods-HomeWork_2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VNY47P4USV;
-				INFOPLIST_FILE = HomeWork_2.9/Info.plist;
+				INFOPLIST_FILE = "HomeWork_2.9/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
