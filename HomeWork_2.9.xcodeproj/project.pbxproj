@@ -68,7 +68,7 @@
 				C855F5DC251374CC00996F8A /* Supporting File */,
 				C855F5DE2513750600996F8A /* View Controllers */,
 				C855F5DD251374E800996F8A /* Storyboards */,
-				C855F5D12513749F00996F8A /* Assets.xcassets */,
+				C855F5E12516274E00996F8A /* Resours */,
 			);
 			path = HomeWork_2.9;
 			sourceTree = "<group>";
@@ -95,10 +95,18 @@
 		C855F5DE2513750600996F8A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C855F5CC2513749E00996F8A /* ViewController.swift */,
 				C855F5DF2513C62A00996F8A /* Model.swift */,
+				C855F5CC2513749E00996F8A /* ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C855F5E12516274E00996F8A /* Resours */ = {
+			isa = PBXGroup;
+			children = (
+				C855F5D12513749F00996F8A /* Assets.xcassets */,
+			);
+			path = Resours;
 			sourceTree = "<group>";
 		};
 		E092189A6A803C33115AAD3B /* Pods */ = {

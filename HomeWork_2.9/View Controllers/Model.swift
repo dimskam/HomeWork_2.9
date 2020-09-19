@@ -8,7 +8,7 @@
 
 import Spring
 
-struct Animations {
+struct Animation {
     
     let animation: String
     let curve: String
@@ -17,40 +17,40 @@ struct Animations {
     let velocity: CGFloat
     let rotate: CGFloat
 }
-func getSetOfAnimation() -> [Animations]{
-    
-    let animFist = Animations(animation: Spring.AnimationPreset.FadeInDown.rawValue,
-                              curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                              force: 1, damping: 6, velocity: 0.4, rotate: 1)
-    let animSecond = Animations(animation: Spring.AnimationPreset.Morph.rawValue,
-                                curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                                force: 1, damping: 5, velocity: 0.8, rotate: 1)
-    let animThird = Animations(animation: Spring.AnimationPreset.SqueezeUp.rawValue,
-                               curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                               force: 1, damping: 3, velocity: 0.3, rotate: 1)
-    let animFor = Animations(animation: Spring.AnimationPreset.Wobble.rawValue,
-                             curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                             force: 1, damping: 8, velocity: 0.9, rotate: 1)
-    let animaFifts = Animations(animation: Spring.AnimationPreset.Pop.rawValue,
-                                curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                                force: 1, damping: 2, velocity: 0.4, rotate: 1)
-    let animSixs = Animations(animation: Spring.AnimationPreset.Shake.rawValue,
-                              curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                              force: 1, damping: 3, velocity: 0, rotate: 1)
-    let animSevents = Animations(animation: Spring.AnimationPreset.SqueezeLeft.rawValue,
-                                 curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                                 force: 1, damping: 1, velocity: 0.8, rotate: 1)
-    let animEith = Animations(animation: Spring.AnimationPreset.FadeIn.rawValue,
-                              curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                              force: 1, damping: 9, velocity: 0.5, rotate: 1)
-    let animNine = Animations(animation: Spring.AnimationPreset.ZoomIn.rawValue,
-                              curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                              force: 1, damping: 4, velocity: 0.3, rotate: 1)
-    let animTens = Animations(animation: Spring.AnimationPreset.FlipY.rawValue,
-                              curve: Spring.AnimationCurve.EaseInBack.rawValue,
-                              force: 1, damping: 2, velocity: 0, rotate: 1)
-    let animations = [animFist, animSecond, animThird, animFor, animaFifts,
-                             animSixs, animSevents, animEith, animNine, animTens]
-    return animations
-}
 
+extension Animation {
+    static func getNaborOfAnimation() -> [Animation] {
+        return [
+        Animation(animation: Spring.AnimationPreset.FadeInDown.rawValue,
+                                  curve: Spring.AnimationCurve.EaseInBack.rawValue,
+                                  force: 1, damping: 6, velocity: 0.4, rotate: 2),
+        Animation(animation: Spring.AnimationPreset.Morph.rawValue,
+                                  curve: Spring.AnimationCurve.EaseInCirc.rawValue,
+                                  force: 3, damping: 5, velocity: 0.8, rotate: 1),
+        Animation(animation: Spring.AnimationPreset.SqueezeUp.rawValue,
+                                  curve: Spring.AnimationCurve.EaseInExpo.rawValue,
+                                  force: 5, damping: 3, velocity: 0.3, rotate: 3),
+        Animation(animation: Spring.AnimationPreset.Wobble.rawValue,
+                                 curve: Spring.AnimationCurve.EaseInOut.rawValue,
+                                 force: 2, damping: 8, velocity: 0.9, rotate: 1),
+        Animation(animation: Spring.AnimationPreset.Pop.rawValue,
+                                 curve: Spring.AnimationCurve.EaseInOutExpo.rawValue,
+                                 force: 6, damping: 5, velocity: 0.4, rotate: 4),
+        Animation(animation: Spring.AnimationPreset.Shake.rawValue,
+                                  curve: Spring.AnimationCurve.EaseInBack.rawValue,
+                                  force: 9, damping: 3, velocity: 0, rotate: 5),
+        Animation(animation:               Spring.AnimationPreset.SqueezeLeft.rawValue,
+                                 curve: Spring.AnimationCurve.EaseInOutQuad.rawValue,
+                                 force: 5, damping: 1, velocity: 0.8, rotate: 1),
+        Animation(animation: Spring.AnimationPreset.FadeIn.rawValue,
+                                  curve: Spring.AnimationCurve.EaseInQuart.rawValue,
+                                  force: 2, damping: 9, velocity: 0.5, rotate: 3),
+        Animation(animation: Spring.AnimationPreset.ZoomIn.rawValue,
+                                  curve: Spring.AnimationCurve.EaseOutCubic.rawValue,
+                                  force: 7, damping: 4, velocity: 0.3, rotate: 5),
+        Animation(animation: Spring.AnimationPreset.FlipY.rawValue,
+                                  curve: Spring.AnimationCurve.EaseOutExpo.rawValue,
+                                  force: 4, damping: 2, velocity: 0, rotate: 2)
+      ]
+    }
+}

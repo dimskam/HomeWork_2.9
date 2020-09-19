@@ -9,32 +9,30 @@
 import Spring
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet var spingAnimationView: SpringView!
     @IBOutlet var animationLabel: SpringLabel!
     @IBOutlet var runAnimationButton: SpringButton!
     
-    
-    private let anims = getSetOfAnimation()
-    private var codeText: String = ""
+    private var anims = Animation.getNaborOfAnimation()
     private var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
+       
     }
     
     @IBAction func runAnimationButtonPressed(_ sender: SpringButton) {
         animationLabel.text = getText()
         madeAnimation()
-        }
-
+    }
+    
     private func madeAnimation() {
-        
         if index < anims.count {
             spingAnimationView.animation = anims[index].animation
             spingAnimationView.curve = anims[index].curve
-            spingAnimationView.force = anims[index].force
+            spingAnimationView.force = anims[index].force 
             spingAnimationView.damping = anims[index].damping
             spingAnimationView.velocity = anims[index].velocity
             spingAnimationView.rotate = anims[index].rotate
@@ -46,7 +44,6 @@ class ViewController: UIViewController {
             }
             runAnimationButton.setTitle(anims[index + 1].animation, for: .normal)
             index += 1
-            
         } else {return}
     }
     
@@ -57,11 +54,10 @@ class ViewController: UIViewController {
         Force: \(anims[index].force)
         Damping: \(anims[index].damping)
         Velocity: \(anims[index].velocity)
-        Rotate: \(anims[index].velocity)
+        Rotate: \(anims[index].rotate)
         """
         return codeText
     }
-    
 }
 
 
