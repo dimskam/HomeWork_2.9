@@ -20,8 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
-       
-    }
+       }
     
     @IBAction func runAnimationButtonPressed(_ sender: SpringButton) {
         animationLabel.text = getText()

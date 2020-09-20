@@ -39,7 +39,7 @@ extension Animation {
         Animation(animation: Spring.AnimationPreset.Shake.rawValue,
                                   curve: Spring.AnimationCurve.EaseInBack.rawValue,
                                   force: 9, damping: 3, velocity: 0, rotate: 5),
-        Animation(animation:               Spring.AnimationPreset.SqueezeLeft.rawValue,
+        Animation(animation: Spring.AnimationPreset.SqueezeLeft.rawValue,
                                  curve: Spring.AnimationCurve.EaseInOutQuad.rawValue,
                                  force: 5, damping: 1, velocity: 0.8, rotate: 1),
         Animation(animation: Spring.AnimationPreset.FadeIn.rawValue,
